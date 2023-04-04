@@ -4,6 +4,21 @@
              x:Class="SalesPro.AddCustomerPage"
              Title="AddCustomerPage">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/> <!--CustID-->
+            <RowDefinition Height="*"/> <!--FirstName-->
+            <RowDefinition Height="*"/> <!--LastName-->
+            <RowDefinition Height="*"/> <!--Address-->
+            <RowDefinition Height="*"/> <!--PH Number-->
+            <RowDefinition Height="*"/> <!--Date Visited-->
+            <RowDefinition Height="*"/> <!--Interested in Product-->
+            <RowDefinition Height="*"/> <!--Notes-->
+            <RowDefinition Height="*"/> <!--Submit Button-->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            
+        </Grid.ColumnDefinitions>
     </Grid>
 </ContentPage>

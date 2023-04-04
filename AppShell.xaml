@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SalesPro.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SalesPro"
+    Shell.FlyoutBehavior="Disabled">
+    <TabBar>
+        <!--All Icons Provided by the fine folks over at icons8 www.icons9.com -->
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Icon="{OnPlatform 'icons8home48.png'}"
+            Route="MainPage" />
+        <ShellContent
+            Title="Add"
+            ContentTemplate="{DataTemplate local:AddCustomerPage}"
+            Icon="{OnPlatform 'icons8contacts48.png'}"/>
+        <ShellContent
+            Title="Map"
+            ContentTemplate="{DataTemplate local:CustMap}"
+            Icon="{OnPlatform 'icons8mapmarker48.png'}"/>
+        <ShellContent
+            Title="Schedule"
+            ContentTemplate="{DataTemplate local:SchedulePage}"
+            Icon="{OnPlatform 'icons8calendar48.png'}"/>
+    </TabBar>
+    
+
+</Shell>

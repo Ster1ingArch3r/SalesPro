@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SalesPro.AddCustomerPage"
-             Title="AddCustomerPage">
+             Title="Add New Customer">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/> <!--CustID-->
+            <RowDefinition Height="*"/> 
             <RowDefinition Height="*"/> <!--FirstName-->
             <RowDefinition Height="*"/> <!--LastName-->
             <RowDefinition Height="*"/> <!--Address-->
@@ -16,9 +16,127 @@
             <RowDefinition Height="*"/> <!--Submit Button-->
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            
         </Grid.ColumnDefinitions>
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Text="Add A New Customer"
+            FontSize="32"
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill"/>
+        
+        <Label 
+            Grid.Column="0" 
+            Grid.Row="1"
+            Text="First Name:"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+        <Label 
+            Grid.Column="0" 
+            Grid.Row="2"
+            Text="Last Name:"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+        <Label 
+            Grid.Column="0" 
+            Grid.Row="3"
+            Text="Address:"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+        <Label 
+            Grid.Column="0" 
+            Grid.Row="4"
+            Text="Phone Number:"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+        <Label 
+            Grid.Column="0" 
+            Grid.Row="5"
+            Text="Date Visited:"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+        <Label 
+            Grid.Column="0" 
+            Grid.Row="6"
+            Text="Product Interest:"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+        <Label 
+            Grid.Column="0" 
+            Grid.Row="7"
+            Text="Notes:"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+        
+        
+        <Entry
+            x:Name="Fname"
+            Grid.Row="1"
+            Grid.Column="1"
+            Placeholder=""
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill"
+            />
+        <Entry
+            x:Name="Lname"
+            Grid.Row="2"
+            Grid.Column="1"
+            Placeholder=""
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill"
+            />
+        <Entry
+            x:Name="Addr"
+            Grid.Row="3"
+            Grid.Column="1"
+            Placeholder=""
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill"
+            />
+        <Entry
+            x:Name="Pnum"
+            Grid.Row="4"
+            Grid.Column="1"
+            Placeholder="xxx-xxx-xxxx"
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill"
+            />
+        <DatePicker
+            x:Name="Picker"
+            Grid.Row="5"
+            Grid.Column="1"
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill"
+            />
+        <Entry
+            x:Name="YN"
+            Grid.Row="6"            
+            Grid.Column="1"
+            Placeholder="Y/N"
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill"
+            />
+        <Editor
+            x:Name="notes"
+            Grid.Row="7"
+            Grid.Column="1"
+            Placeholder="Customer Notes"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+            />
+
+
+        <Button
+            Grid.Column="0"
+            Grid.Row="9"
+            Grid.ColumnSpan="2"
+            Text="Submit"
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill"
+            Clicked="Button_Clicked"/>
+
     </Grid>
 </ContentPage>
